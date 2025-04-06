@@ -25,63 +25,49 @@ export default function Header() {
       <div className="container mx-auto py-4 px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-serif font-bold">
-            Tanishq
+          <Link href="/" className="text-2xl font-serif font-bold text-brand-red hover:text-brand-gold transition-colors">
+            JewelProto
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
-            <div className="group relative">
-              <Link href="/collections" className="flex items-center hover:text-amber-700">
-                All Jewellery <ChevronDown className="h-4 w-4 ml-1" />
-              </Link>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg p-4 z-10 w-[200px]">
-                <Link href="/collections/earrings" className="block py-2 hover:text-amber-700">
-                  Earrings
-                </Link>
-                <Link href="/collections/pendants" className="block py-2 hover:text-amber-700">
-                  Pendants
-                </Link>
-                <Link href="/collections/rings" className="block py-2 hover:text-amber-700">
-                  Rings
-                </Link>
-                <Link href="/collections/necklaces" className="block py-2 hover:text-amber-700">
-                  Necklaces
-                </Link>
-                <Link href="/collections/bracelets" className="block py-2 hover:text-amber-700">
-                  Bracelets
-                </Link>
-              </div>
-            </div>
-            <Link href="/collections/gold" className="hover:text-amber-700">
+          {/* Desktop Navigation - Updated Links */}
+          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+            <Link href="/shop" className="hover:text-brand-gold transition-colors">
+              Shop All
+            </Link>
+            <Link href="/collections" className="hover:text-brand-gold transition-colors">
+              Collections
+            </Link>
+            <Link href="/collections/gold" className="hover:text-brand-gold transition-colors">
               Gold
             </Link>
-            <Link href="/collections/diamond" className="hover:text-amber-700">
+            <Link href="/collections/diamond" className="hover:text-brand-gold transition-colors">
               Diamond
             </Link>
-            <Link href="/collections/wedding" className="hover:text-amber-700">
+            <Link href="/collections/wedding" className="hover:text-brand-gold transition-colors">
               Wedding
             </Link>
-            <Link href="/collections/gifts" className="hover:text-amber-700">
+            <Link href="/collections/gifts" className="hover:text-brand-gold transition-colors">
               Gifts
             </Link>
-            <Link href="/collections/exclusive" className="hover:text-amber-700">
+            <Link href="/collections/exclusive" className="hover:text-brand-gold transition-colors">
               Exclusive
             </Link>
+            {/* Add other top-level links if needed */}
           </nav>
 
           {/* Icons */}
           <div className="flex items-center space-x-4">
-            <button aria-label="Search">
+            <button aria-label="Search" className="text-gray-600 hover:text-brand-gold transition-colors">
               <Search className="h-5 w-5" />
             </button>
-            <Link href="/account" aria-label="Account">
+            <Link href="/account" aria-label="Account" className="text-gray-600 hover:text-brand-gold transition-colors">
               <User className="h-5 w-5" />
             </Link>
-            <Link href="/wishlist" aria-label="Wishlist">
+            <Link href="/wishlist" aria-label="Wishlist" className="text-gray-600 hover:text-brand-gold transition-colors">
               <Heart className="h-5 w-5" />
             </Link>
-            <Link href="/cart" aria-label="Cart">
+            <Link href="/cart" aria-label="Cart" className="text-gray-600 hover:text-brand-gold transition-colors">
               <ShoppingBag className="h-5 w-5" />
             </Link>
             <button className="md:hidden" aria-label="Menu">

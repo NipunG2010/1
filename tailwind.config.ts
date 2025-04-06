@@ -56,6 +56,10 @@ const config: Config = {
           900: "#78350f",
           950: "#451a03",
         },
+        // Moved brand colors here
+        'brand-red': '#9A1D29', // Deep Red/Maroon
+        'brand-gold': '#B8860B', // Gold
+        'brand-offwhite': '#FAF0E6', // Off-white
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,7 +71,7 @@ const config: Config = {
         serif: ["var(--font-playfair)"],
       },
     },
-  },
+  }, // Removed comment
   plugins: [require("tailwindcss-animate")],
 }
 
