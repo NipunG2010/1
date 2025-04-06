@@ -16,10 +16,9 @@ const lato = Lato({
 })
 
 export const metadata = {
-  title: "Tanishq - Premium Jewellery Collection",
+  title: "Goyal Jewellers",
   description:
-    "Discover exquisite jewellery collections at Tanishq. Shop for gold, diamond, and precious gemstone jewellery.",
-    generator: 'v0.dev'
+    "Discover exquisite jewellery collections. Shop for gold, diamond, and precious gemstone jewellery.",
 }
 
 export default function RootLayout({
